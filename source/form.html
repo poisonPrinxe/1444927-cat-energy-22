@@ -17,46 +17,46 @@
     </header>
     <main>
       <h1 class="headline">Подбор программы</h1>
-      <form class="form">
+      <form class="form" action=https://echo.htmlacademy.ru/>
         <p class="form__description">заполните анкету, и мы подберём<br>программу питания для вашего кота</p>
         <div class="form__div form__div--basics">
           <label class="form__text-label" for="name">имя:*</label>
-          <input class="form__text-input" type="text" id="name">
+          <input class="form__text-input" type="text" name="name" id="name">
           <label class="form__text-label" for="weight">вес (кг):*</label>
-          <input class="form__text-input" type="number" id="weight">
+          <input class="form__text-input" type="number" name="weight" id="weight">
           <label class="form__text-label" for="age">возраст (лет):</label>
-          <input class="form__text-input" type="number" id="age">
+          <input class="form__text-input" type="number" name="age" id="age">
         </div>
         <div class="form__div form__div--radio">
-          <input class="form__radio-input" type="radio" name="which-help" id="weight-loss" checked>
+          <input class="form__radio-input" type="radio" name="which-help" id="weight-loss" value="weight-loss" checked>
           <label class="form__radio-label" for="weight-loss">похудение</label>
-          <input class="form__radio-input" type="radio" name="which-help" id="weight-gain">
+          <input class="form__radio-input" type="radio" name="which-help" id="weight-gain" value="weight-gain">
           <label class="form__radio-label" for="weight-gain">набор массы</label>
-          <input class="form__radio-input" type="radio" name="which-help" id="dont-know">
+          <input class="form__radio-input" type="radio" name="which-help" id="dont-know" value="dont-know">
           <label class="form__radio-label" for="dont-know">не знаю (нужен ваш совет)</label>
         </div>
         <div class="form__div form__div--contacts">
           <h2 class="form__name">Контактные данные (владельца кота)</h2>
           <label class="form__text-label" for="email">e-mail:*</label>
-          <input class="form__text-input" type="email" id="email">
+          <input class="form__text-input" type="email" name="email" id="email">
           <label class="form__text-label" for="tel">телефон:*</label>
-          <input class="form__text-input" type="tel" id="tel">
+          <input class="form__text-input" type="tel" name="tel" id="tel">
         </div>
         <div class="form__div form__div--commentary">
           <label class="form__name" for="text">Комментарий</label>
-          <textarea class="form__text-input form__text-input--textarea" id="text"></textarea>
+          <textarea class="form__text-input form__text-input--textarea" name="text" id="text"></textarea>
         </div>
         <div class="form__div form__div--extras">
           <h2 class="form__name">Дополнительно</h2>
-          <input class="form__checkbox-input" type="checkbox" name="extra" id="fake-sugar" checked>
+          <input class="form__checkbox-input" type="checkbox" name="extra" id="fake-sugar" value="fake-sugar" checked>
           <label class="form__checkbox-label" for="fake-sugar">сахарозаменитель</label>
-          <input class="form__checkbox-input" type="checkbox" name="extra" id="water">
+          <input class="form__checkbox-input" type="checkbox" name="extra" id="water" value="water">
           <label class="form__checkbox-label" for="water">питьевая вода</label>
-          <input class="form__checkbox-input" type="checkbox" name="extra" id="milk">
+          <input class="form__checkbox-input" type="checkbox" name="extra" id="milk" value="milk">
           <label class="form__checkbox-label" for="milk">молоко</label>
-          <input class="form__checkbox-input" type="checkbox" name="extra" id="vitamins">
+          <input class="form__checkbox-input" type="checkbox" name="extra" id="vitamins" value="vitamins">
           <label class="form__checkbox-label" for="vitamins">витамины</label>
-          <input class="form__submit" type="submit" value="отправить заявку" class="button button--submit">
+          <input class="form__submit button button--submit" type="submit" value="отправить заявку">
           <p class="form__requirement">* — Обязательные поля</p>
         </div>
       </form>
