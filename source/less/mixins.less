@@ -1,4 +1,4 @@
-.theme(@background; @text: black) {
+.theme(@background; @text: @special-dark-grey) {
   color: @text;
   background: @background;
 }
@@ -21,6 +21,15 @@
   font-weight: 500;
   font-size: @font-size;
   line-height: @line-height;
+}
+
+.oswald() {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: black;
+}
+
+.oswald(theme) {
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .size(@width; @height) {
