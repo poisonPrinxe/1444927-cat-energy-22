@@ -1,0 +1,35 @@
+.live-example {
+  .theme(@basic-grey);
+}
+
+.live-example__value {
+  .caps();
+  .oswald();
+  .font(24px; 24px);
+  @media (min-width: @tablet-width) {
+    .font(30px; 30px);
+  }
+}
+
+.live-example__stat {
+  .font(12px; 12px);
+  @media (min-width: @tablet-width) {
+    .font(14px; 14px);
+  }
+}
+
+.live-example__cost {
+  .caps();
+  .oswald();
+}
+
+.live-example__before-after {
+  .caps();
+  .oswald();
+  .font(16px; 18px);
+  @media (min-width: @tablet-width) {
+    .font(20px; 21px);
+  }
+  .theme(transparent);
+  .no-border();
+}
