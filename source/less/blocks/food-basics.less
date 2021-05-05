@@ -1,6 +1,5 @@
 .food-basics {
   background: url("../img/index-background.jpg");
-  color: white;
   @media (min-width: @tablet-width) {
     .theme(transparent);
   }
@@ -16,9 +15,21 @@
   }
 }
 
+.food-basics__headline {
+  .oswald();
+  color: white;
+  @media (min-width: @tablet-width) {
+    .black();
+  }
+}
+
 .food-basics__catchphrase {
   .caps();
   .oswald();
+  color: white;
+  @media (min-width: @tablet-width) {
+    .black();
+  }
 }
 
 .food-basics__button {
