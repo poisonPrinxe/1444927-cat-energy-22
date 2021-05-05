@@ -1,0 +1,39 @@
+.food-basics {
+  background: url("../img/index-background.jpg");
+  @media (min-width: @tablet-width) {
+    .theme(transparent);
+  }
+}
+
+.food-basics::before {
+  @media (min-width: @desktop-width) {
+    content: url("../img/index-background.jpg");
+    z-index: -1;
+    position: absolute;
+    transform: translateX(600px);
+    top: 0;
+  }
+}
+
+.food-basics__headline {
+  .oswald();
+  color: white;
+  @media (min-width: @tablet-width) {
+    .black();
+  }
+}
+
+.food-basics__catchphrase {
+  .caps();
+  .oswald();
+  color: white;
+  @media (min-width: @tablet-width) {
+    .black();
+  }
+}
+
+.food-basics__button {
+  @media (min-width: @tablet-width) {
+    .size(244px; 54px);
+  }
+}
