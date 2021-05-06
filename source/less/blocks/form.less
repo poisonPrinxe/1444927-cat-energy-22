@@ -34,12 +34,15 @@
   @media (min-width: @tablet-width) {
     .font(20px; 30px);
   }
+  &::placeholder {
+    color: @special-dark-grey;
+  }
 }
 
 .form__radio-label {
   .caps();
   .oswald();
-  .black();
+  color: @special-dark-grey-2;
   .font(16px; 18px);
   @media (min-width: @tablet-width) {
     .font(20px; 30px);
