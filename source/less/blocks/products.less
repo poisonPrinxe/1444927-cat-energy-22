@@ -1,0 +1,18 @@
+.products__option {
+  @media (min-width: @tablet-width) {
+    .theme(@basic-grey);
+    &--show-more {
+      .theme(transparent);
+    }
+  }
+}
+
+.products__name {
+  .caps();
+  .oswald();
+  .black();
+  .font(16px; 20px);
+  @media (min-width: @tablet-width) {
+    .font(20px; 24px);
+  }
+}
