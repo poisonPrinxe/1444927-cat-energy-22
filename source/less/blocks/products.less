@@ -1,0 +1,32 @@
+.products__option {
+  @media (min-width: @tablet-width) {
+    .theme(@basic-grey);
+    &--show-more {
+      .theme(transparent);
+    }
+  }
+}
+
+.products__name {
+  .caps();
+  .oswald();
+  .black();
+  .font(16px; 20px);
+  @media (min-width: @tablet-width) {
+    .font(20px; 24px);
+  }
+}
+
+.products__stat {
+  .font(12px; 16px);
+  @media (min-width: @tablet-width) {
+    .font(16px; 16px);
+  }
+}
+
+.products__show-description {
+  .font(12px; 16px);
+  @media (min-width: @tablet-width) {
+    .font(16px; 18px);
+  }
+}
