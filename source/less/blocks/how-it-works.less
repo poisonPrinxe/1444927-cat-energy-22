@@ -1,1 +1,14 @@
-/* placeholder */
+.how-it-works__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 137px;
+  }
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
+}

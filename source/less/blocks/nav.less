@@ -1,3 +1,27 @@
+.nav__list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 478px;
+  }
+}
+
+.nav__item {
+  border-bottom: 1px solid @basic-grey-2;
+  @media (min-width: @tablet-width) {
+    border: none;
+    &--current {
+      border-bottom: 2px solid @basic-green;
+    }
+  }
+}
+
 .nav__link {
   .caps();
   .oswald();
@@ -8,5 +32,8 @@
   }
   @media (min-width: @desktop-width) {
     .font(20px; 30px);
+    &--index {
+      color: white;
+    }
   }
 }
