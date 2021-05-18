@@ -23,49 +23,75 @@
         <p class="form__description container">заполните анкету, и мы подберём<br>программу питания для вашего кота</p>
         <div class="form__basics-radio-wrapper container">
           <div class="form__div form__div--basics">
-            <label class="form__text-label" for="name">имя:*</label>
-            <input class="form__text-input" type="text" name="name" id="name" placeholder="Барсик">
-            <label class="form__text-label" for="weight">вес (кг):*</label>
-            <input class="form__text-input" type="number" name="weight" id="weight" placeholder="7">
-            <label class="form__text-label" for="age">возраст (лет):</label>
-            <input class="form__text-input" type="number" name="age" id="age" placeholder="7">
+            <div>
+              <label class="form__text-label" for="name">имя:*</label>
+              <input class="form__text-input" type="text" name="name" id="name" placeholder="Барсик">
+            </div>
+            <div>
+              <label class="form__text-label" for="weight">вес (кг):*</label>
+              <input class="form__text-input" type="number" name="weight" id="weight" placeholder="7">
+            </div>
+            <div>
+              <label class="form__text-label" for="age">возраст (лет):</label>
+              <input class="form__text-input" type="number" name="age" id="age" placeholder="7">
+            </div>
           </div>
           <div class="form__div form__div--radio">
-            <input class="form__radio-input" type="radio" name="which-help" id="weight-loss" value="weight-loss" checked>
-            <label class="form__radio-label" for="weight-loss">похудение</label>
-            <input class="form__radio-input" type="radio" name="which-help" id="weight-gain" value="weight-gain">
-            <label class="form__radio-label" for="weight-gain">набор массы</label>
-            <input class="form__radio-input" type="radio" name="which-help" id="dont-know" value="dont-know">
-            <label class="form__radio-label" for="dont-know">не знаю (нужен ваш совет)</label>
+            <div>
+              <input class="form__radio-input" type="radio" name="which-help" id="weight-loss" value="weight-loss" checked>
+              <label class="form__radio-label" for="weight-loss">похудение</label>
+            </div>
+            <div>
+              <input class="form__radio-input" type="radio" name="which-help" id="weight-gain" value="weight-gain">
+              <label class="form__radio-label" for="weight-gain">набор массы</label>
+            </div>
+            <div>
+              <input class="form__radio-input" type="radio" name="which-help" id="dont-know" value="dont-know">
+              <label class="form__radio-label" for="dont-know">не знаю (нужен ваш совет)</label>
+            </div>
           </div>
         </div>
         <div class="form__div form__div--contacts">
-          <div class="form__title-wrapper"><h2 class="form__name container">Контактные данные (владельца кота)</h2></div>
+          <div class="form__title-wrapper"><h2 class="container"><span class="form__name">Контактные данные (владельца кота)</span></h2></div>
           <div class="form__contacts-wrapper container">
-            <label class="form__text-label" for="email">e-mail:*</label>
-            <input class="form__text-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-            <label class="form__text-label" for="tel">телефон:*</label>
-            <input class="form__text-input" type="tel" name="tel" id="tel" placeholder="+7 (960) 900-60-90">
+            <div>
+              <label class="form__text-label" for="email">e-mail:*</label>
+              <input class="form__text-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+            </div>
+            <div>
+              <label class="form__text-label" for="tel">телефон:*</label>
+              <input class="form__text-input" type="tel" name="tel" id="tel" placeholder="+7 (960) 900-60-90">
+            </div>
           </div>
         </div>
         <div class="form__div form__div--commentary">
-          <div class="form__title-wrapper"><div class="container"><label class="form__name" for="text">Комментарий</label></div></div>
+          <div class="form__title-wrapper"><div class="container"><label for="text"><span class="form__name">Комментарий</span></label></div></div>
           <div class="container"><textarea class="form__text-input form__text-input--textarea" name="text" id="text" placeholder="расскажите обо всех повадках кота"></textarea></div>
         </div>
         <div class="form__div form__div--extras">
-          <div class="form__title-wrapper"><h2 class="form__name container">Дополнительно</h2></div>
+          <div class="form__title-wrapper"><h2 class="container"><span class="form__name">Дополнительно</span></h2></div>
           <div class="form__extras-wrapper container">
-            <input class="form__checkbox-input" type="checkbox" name="extra" id="fake-sugar" value="fake-sugar" checked>
-            <label class="form__checkbox-label" for="fake-sugar">сахарозаменитель</label>
-            <input class="form__checkbox-input" type="checkbox" name="extra" id="water" value="water">
-            <label class="form__checkbox-label" for="water">питьевая вода</label>
-            <input class="form__checkbox-input" type="checkbox" name="extra" id="milk" value="milk">
-            <label class="form__checkbox-label" for="milk">молоко</label>
-            <input class="form__checkbox-input" type="checkbox" name="extra" id="vitamins" value="vitamins">
-            <label class="form__checkbox-label" for="vitamins">витамины</label>
+            <div>
+              <input class="form__checkbox-input" type="checkbox" name="extra" id="fake-sugar" value="fake-sugar" checked>
+              <label class="form__checkbox-label" for="fake-sugar">сахарозаменитель</label>
+            </div>
+            <div>
+              <input class="form__checkbox-input" type="checkbox" name="extra" id="water" value="water">
+              <label class="form__checkbox-label" for="water">питьевая вода</label>
+            </div>
+            <div>
+              <input class="form__checkbox-input" type="checkbox" name="extra" id="milk" value="milk">
+              <label class="form__checkbox-label" for="milk">молоко</label>
+            </div>
+            <div>
+              <input class="form__checkbox-input" type="checkbox" name="extra" id="vitamins" value="vitamins">
+              <label class="form__checkbox-label" for="vitamins">витамины</label>
+            </div>
           </div>
-          <input class="form__submit button button--submit container" type="submit" value="отправить заявку">
-          <p class="form__requirement container">* — Обязательные поля</p>
+          <div class="form__end-wrapper container">
+            <input class="form__submit button button--submit" type="submit" value="отправить заявку">
+            <p class="form__requirement">* — Обязательные поля</p>
+          </div>
         </div>
       </form>
     </main>
