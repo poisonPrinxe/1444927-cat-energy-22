@@ -19,7 +19,7 @@
   @media (min-width: @desktop-width) {
     width: 570px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -29,10 +29,27 @@
   }
 }
 
+.form__end-wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .form__extras-wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.form__contacts-wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -92,5 +109,5 @@
 }
 
 .form__requirement {
-  .theme(transparent; black);
+  .black();
 }
