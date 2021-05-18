@@ -4,27 +4,30 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <a class="logo header__logo"><img class="logo__image"></a>
       <nav class="nav header__nav">
         <ul class="list nav__list">
-          <li class="nav__item nav__item--current"><a class="nav__link">главная</a></li>
-          <li class="nav__item"><a class="nav__link" href="catalog.html">каталог продукции</a></li>
-          <li class="nav__item"><a class="nav__link" href="form.html">подбор программы</a></li>
+          <li class="nav__item nav__item--current"><a class="nav__link nav__link--index">главная</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--index" href="catalog.html">каталог продукции</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--index" href="form.html">подбор программы</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="food-basics">
-        <h1 class="headline food-basics__headline">Функциональное <br> питание для котов</h1>
-        <p class="food-basics__catchphrase">занялся собой? займись котом!</p>
-        <img class="food-basics__image" src="img/index-can-mobile-1.png" width="280" height="270" alt="can of cat food">
-        <a class="button button--link food-basics__button" href="form.html">подобрать программу</a>
+        <div class="container">
+          <h1 class="headline food-basics__headline">Функциональное <br> питание для котов</h1>
+          <p class="food-basics__catchphrase">занялся собой? займись котом!</p>
+          <img class="food-basics__image" src="img/index-can-mobile-1.png" width="280" height="270" alt="can of cat food">
+          <a class="button button--link food-basics__button" href="form.html">подобрать программу</a>
+        </d>
       </section>
       <section class="program-options">
-        <ul class="list program-options__list">
+        <ul class="list program-options__list container">
           <li class="program-options__item program-options__item--slim">
             <h3 class="program-options__function">похудение</h3>
             <p class="program-options__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -37,7 +40,7 @@
           </li>
         </ul>
       </section>
-      <section class="how-it-works">
+      <section class="how-it-works container">
         <h2 class="headline how-it-works__headline">Как это работает</h2>
         <ol class="list list--org how-it-works__list">
           <li class="how-it-works__option">Функциональное питание содержит только полезные питательные вещества.</li>
@@ -47,41 +50,49 @@
         </ol>
       </section>
       <section class="live-example">
-        <h2 class="headline live-example__headline">Живой пример</h2>
-        <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <ul class="list live-example__stats">
-          <li class="live-example__option">
-            <p class="live-example__value">5 кг</p>
-            <p class="live-example__stat">снижение веса</p>
-          </li>
-          <li class="live-example__option">
-            <p class="live-example__value">60 дней</p>
-            <p class="live-example__stat">затрачено времени</p>
-          </li>
-        </ul>
-        <p class="live-example__cost">затраты на питание: 15 000 руб.</p>
-        <img class="live-example__image live-example__image--before" src="img/before-mobile-1.png" width="311" height="232" alt="before">
-        <img class="live-example__image live-example__image--after" src="img/after-mobile-1.png" width="251" height="240" alt="after" class="visually-hidden">
-        <button type="button" class="live-example__before-after live-example__before-after--before">было</button>
-        <button type="button" class="live-example__before-after live-example__before-after--after">стало</button>
+        <div class="container">
+          <h2 class="headline live-example__headline">Живой пример</h2>
+          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <ul class="list live-example__stats">
+            <li class="live-example__option">
+              <p class="live-example__value">5 кг</p>
+              <p class="live-example__stat">снижение веса</p>
+            </li>
+            <li class="live-example__option">
+              <p class="live-example__value">60 дней</p>
+              <p class="live-example__stat">затрачено времени</p>
+            </li>
+          </ul>
+          <p class="live-example__cost">затраты на питание: 15 000 руб.</p>
+          <img class="live-example__image live-example__image--before" src="img/before-image.png" width="311" height="232" alt="before">
+          <img class="live-example__image live-example__image--after visually-hidden" src="img/after-image.png" width="251" height="240" alt="after">
+          <button type="button" class="live-example__before-after live-example__before-after--before">было</button>
+          <button type="button" class="live-example__before-after live-example__before-after--after">стало</button>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__contacts">
-        <p class="footer__announcement">приглашаем к сотрудничеству дилеров!</p>
-        <p class="footer__address">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="footer__address">Санкт-Петербург</p>
+      <div class="footer__contacts footer__contacts--index">
+        <div class="container footer__contacts-container">
+          <p class="footer__announcement">приглашаем к сотрудничеству дилеров!</p>
+          <div class="footer__address">
+            <p class="footer__address-paragraph">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="footer__address-paragraph">Санкт-Петербург</p>
+          </div>
+        </div>
       </div>
       <div class="footer__map">
       </div>
-      <a><img src="img/footer-textlogo.svg"></a>
-      <ul class="list footer__social">
-        <li class="footer__social-element footer__social-element--vk"><a href="#"></a></li>
-        <li class="footer__social-element footer__social-element--insta"><a href="#"></a></li>
-        <li class="footer__social-element footer__social-element--fb"><a href="#"></a></li>
-      </ul>
-      <div class="footer__html-academy">
-        <a class="footer__html-link" href="#">HTML Academy<img class="footer__html-logo" src="img/logo-html.svg"></a>
+      <div class="container">
+        <a><img src="img/footer-textlogo.svg"></a>
+        <ul class="list footer__social">
+          <li class="footer__social-element footer__social-element--vk"><a href="#"></a></li>
+          <li class="footer__social-element footer__social-element--insta"><a href="#"></a></li>
+          <li class="footer__social-element footer__social-element--fb"><a href="#"></a></li>
+        </ul>
+        <div class="footer__html-academy">
+          <a class="footer__html-link" href="#">HTML Academy<img class="footer__html-logo" src="img/logo-html.svg"></a>
+        </div>
       </div>
     </footer>
   </body>
