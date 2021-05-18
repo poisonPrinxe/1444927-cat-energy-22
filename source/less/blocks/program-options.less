@@ -1,5 +1,18 @@
+.program-options__list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
 .program-options__item {
   .theme(@basic-grey);
+  margin: 20px;
+  @media (min-width: @tablet-width) {
+    margin: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 80px;
+  }
 }
 
 .program-options__function {
