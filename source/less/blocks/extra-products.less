@@ -7,6 +7,13 @@
   }
 }
 
+.extra-products__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .extra-products__option {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -59,7 +66,14 @@
   }
 }
 
-/* .extra-products__stats {
-  display: flex;
-  justify-content: space-between;
-}  */
+.extra-products__gift {
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
+}
+
+.extra-products__description {
+  .font(16px; 20px);
+  color: white;
+  background-color: @basic-green;
+}
