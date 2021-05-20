@@ -42,6 +42,11 @@
 }
 
 .program-options__description {
+  @media (max-width: @tablet-width - 1px) {
+    &::after {
+      content: "";
+    }
+  }
   @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
     &--slim::after {
       content: url("../img/cat-slim.svg");
@@ -49,6 +54,9 @@
     &--pro::after {
       content: url("../img/cat-fit.svg");
     }
+  }
+  @media (min-width: @tablet-width) {
+    .black();
   }
 }
 
