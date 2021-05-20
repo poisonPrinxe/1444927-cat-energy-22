@@ -13,12 +13,36 @@
 }
 
 .footer__contacts {
-  .theme(white);
+  .theme(@basic-grey);
+  @media (min-width: @desktop-width) {
+    .theme(white);
+  }
+  &--index {
+    .theme(white);
+  }
 }
 
 .footer__contacts-container {
   display: flex;
   justify-content: space-between;
+}
+
+.footer__social {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+}
+
+.footer__social-element {
+  &--vk::before {
+    content: url("../img/icon-vk.svg");
+  }
+  &--insta::before {
+    content: url("../img/icon-insta.svg");
+  }
+  &--fb::before {
+    content: url("../img/icon-fb.svg");
+  }
 }
 
 .footer__html-link {
