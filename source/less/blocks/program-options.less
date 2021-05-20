@@ -20,8 +20,35 @@
   .oswald();
   .black();
   .font(24px; 24px);
+  @media (max-width: @tablet-width - 1px) {
+    &--slim::before {
+      content: url("../img/cat-slim.svg");
+    }
+    &--pro::before {
+      content: url("../img/cat-fit.svg");
+    }
+  }
   @media (min-width: @tablet-width) {
     .font(36px; 36px);
+  }
+  @media (min-width: @desktop-width) {
+    &--slim::before {
+      content: url("../img/cat-slim.svg");
+    }
+    &--pro::before {
+      content: url("../img/cat-fit.svg");
+    }
+  }
+}
+
+.program-options__description {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    &--slim::after {
+      content: url("../img/cat-slim.svg");
+    }
+    &--pro::after {
+      content: url("../img/cat-fit.svg");
+    }
   }
 }
 

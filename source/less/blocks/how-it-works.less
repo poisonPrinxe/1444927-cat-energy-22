@@ -12,3 +12,38 @@
     column-gap: 80px;
   }
 }
+
+.how-it-works__option {
+  &--leaf::before {
+    content: url("../img/icon-leaf.svg");
+    .size(60px; 60px);
+    @media (min-width: @tablet-width) {
+      .size(80px; 80px);
+    }
+    background-color: @basic-green;
+  }
+  &--tub::before {
+    content: url("../img/icon-tub.svg");
+    .size(60px; 60px);
+    @media (min-width: @tablet-width) {
+      .size(80px; 80px);
+    }
+    background-color: @basic-green;
+  }
+  &--eat::before {
+    content: url("../img/icon-eat.svg");
+    .size(60px; 60px);
+    @media (min-width: @tablet-width) {
+      .size(80px; 80px);
+    }
+    background-color: @basic-green;
+  }
+  &--alarm::before {
+    content: url("../img/icon-alarm.svg");
+    .size(60px; 60px);
+    @media (min-width: @tablet-width) {
+      .size(80px; 80px);
+    }
+    background-color: @basic-green;
+  }
+}
