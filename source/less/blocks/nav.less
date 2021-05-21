@@ -1,3 +1,53 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+  }
+}
+
+.nav__logo-wrapper {
+  @media (max-width: @tablet-width - 1px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav__logo-image {
+  background: url("../img/logo-mobile.svg") center no-repeat;
+  .size(34px; 38px);
+  @media (min-width: @tablet-width) {
+    background: url("../img/logo-tablet.svg") center no-repeat;
+    .size(174px; 52px);
+  }
+  @media (min-width: @desktop-width) {
+    background: url("../img/logo-desktop.svg") center no-repeat;
+    .size(202px; 59px);
+  }
+  background-size: contain;
+}
+
+.nav__close {
+  display: none;
+  @media (max-width: @tablet-width - 1px) {
+    display: block;
+    .theme(transparent);
+    .no-border();
+    &::after {
+      content: "";
+      display: block;
+      .size(18px; 18px);
+      background: url("../img/cross.svg");
+      background-size: contain;
+    }
+  }
+}
+
 .nav__list {
   text-align: center;
   display: flex;
@@ -16,8 +66,14 @@
   border-bottom: 1px solid @basic-grey-2;
   @media (min-width: @tablet-width) {
     border: none;
-    &--current {
+    &--current,
+    &--current-index {
       border-bottom: 2px solid @basic-green;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &--current-index {
+      border-bottom: 2px solid white;
     }
   }
 }

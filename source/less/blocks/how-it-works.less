@@ -15,35 +15,39 @@
 
 .how-it-works__option {
   &--leaf::before {
-    content: url("../img/icon-leaf.svg");
+    display: block;
+    content: "";
     .size(60px; 60px);
     @media (min-width: @tablet-width) {
       .size(80px; 80px);
     }
-    background-color: @basic-green;
+    background: url("../img/icon-leaf.svg") no-repeat center, @basic-green;
   }
   &--tub::before {
-    content: url("../img/icon-tub.svg");
+    display: block;
+    content: "";
     .size(60px; 60px);
     @media (min-width: @tablet-width) {
       .size(80px; 80px);
     }
-    background-color: @basic-green;
+    background: url("../img/icon-tub.svg") no-repeat center, @basic-green;
   }
   &--eat::before {
-    content: url("../img/icon-eat.svg");
+    display: block;
+    content: "";
     .size(60px; 60px);
     @media (min-width: @tablet-width) {
       .size(80px; 80px);
     }
-    background-color: @basic-green;
+    background: url("../img/icon-eat.svg") no-repeat center, @basic-green;
   }
   &--alarm::before {
-    content: url("../img/icon-alarm.svg");
+    display: block;
+    content: "";
     .size(60px; 60px);
     @media (min-width: @tablet-width) {
       .size(80px; 80px);
     }
-    background-color: @basic-green;
+    background: url("../img/icon-alarm.svg") no-repeat center, @basic-green;
   }
 }

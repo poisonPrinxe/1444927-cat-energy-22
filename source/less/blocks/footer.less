@@ -52,13 +52,34 @@
 
 .footer__social-element {
   &--vk::before {
-    content: url("../img/icon-vk.svg");
+    content: "";
+    background: url("../img/icon-vk.svg") no-repeat;
+    background-size: contain;
+    display: block;
+    .size(23px; 16px);
+    @media (min-width: @tablet-width) {
+      .size(30px; 22px);
+    }
   }
   &--insta::before {
-    content: url("../img/icon-insta.svg");
+    content: "";
+    background: url("../img/icon-insta.svg") no-repeat;
+    background-size: contain;
+    display: block;
+    .size(16px; 16px);
+    @media (min-width: @tablet-width) {
+      .size(23px; 23px);
+    }
   }
   &--fb::before {
-    content: url("../img/icon-fb.svg");
+    content: "";
+    background: url("../img/icon-fb.svg") no-repeat;
+    background-size: contain;
+    display: block;
+    .size(22px; 22px);
+    @media (min-width: @tablet-width) {
+      .size(28px; 33px);
+    }
   }
 }
 

@@ -24,6 +24,7 @@
 }
 
 .form__div--radio {
+  border: 1px solid @basic-grey-2;
   @media (min-width: @desktop-width) {
     width: 570px;
   }
@@ -50,10 +51,19 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
+.form__name-wrapper {
+  border-top: 3px solid #68b738;
+}
+
 .form__name {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  transform: translateY(-50%);
   .oswald();
   .theme(white, black);
   .font(24px; 26px);
@@ -84,6 +94,19 @@
   }
   &::placeholder {
     color: @special-dark-grey;
+  }
+  border: 1px solid @basic-grey-2;
+  &--email {
+    border-color: @special-grey;
+    &::after {
+      content: url("../img/icon-email.svg");
+    }
+  }
+  &--telephone {
+    border-color: @special-grey;
+    &::after {
+      content: url("../img/icon-phone.svg");
+    }
   }
 }
 
