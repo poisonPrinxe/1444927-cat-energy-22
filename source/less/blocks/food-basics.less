@@ -7,11 +7,14 @@
 
 .food-basics::before {
   @media (min-width: @desktop-width) {
-    content: url("../img/index-background.jpg");
+    content: "";
+    background: url("../img/index-background.jpg");
     z-index: -1;
+    .size(50%; 694px);
+    max-width: 1044px;
     position: absolute;
-    transform: translateX(720px);
     top: 0;
+    left: 50%;
   }
 }
 
