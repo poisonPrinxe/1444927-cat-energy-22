@@ -6,13 +6,15 @@
 }
 
 .program-options__item {
+  margin-top: 20px;
+  padding-top: 14px;
+  padding-bottom: 18px;
   .theme(@basic-grey);
   margin-bottom: 20px;
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
   }
   @media (min-width: @desktop-width) {
-    margin-bottom: 60px;
     .size(570px; 374px);
   }
 }
@@ -31,6 +33,8 @@
       background: url("../img/cat-slim.svg") no-repeat center;
       background-size: contain;
       .size(50px; 53px);
+      margin-top: -16px;
+      margin-left: -69px;
     }
     &--pro::before {
       content: "";
@@ -39,6 +43,8 @@
       background: url("../img/cat-fit.svg") no-repeat center;
       background-size: contain;
       .size(67px; 50px);
+      margin-top: -14px;
+      margin-left: -78px;
     }
   }
   @media (min-width: @tablet-width) {
@@ -71,6 +77,8 @@
 }
 
 .program-options__description {
+  margin: 36px 20px 19px;
+  padding-bottom: 23px;
   @media (max-width: @tablet-width - 1px) {
     border-bottom: 1px solid @basic-grey-3;
   }
@@ -104,12 +112,15 @@
   .oswald();
   .black();
   .font(16px; 18px);
+  margin-left: 20px;
   @media (min-width: @tablet-width) {
     .font(20px; 21px);
   }
   &::after {
     content: "";
     position: absolute;
+    margin-top: 2px;
+    margin-left: 15px;
     background: url("../img/arrow.svg") right;
     .size(24px; 12px);
   }

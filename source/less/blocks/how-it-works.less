@@ -1,4 +1,9 @@
+.how-it-works {
+  margin-bottom: 41px;
+}
+
 .how-it-works__list {
+  margin-top: 39px;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
@@ -16,36 +21,48 @@
 .how-it-works__option {
   &--leaf::before {
     display: block;
+    float: left;
     content: "";
     .size(60px; 60px);
+    margin-right: 20px;
     @media (min-width: @tablet-width) {
+      float: none;
       .size(80px; 80px);
     }
     background: url("../img/icon-leaf.svg") no-repeat center, @basic-green;
   }
   &--tub::before {
     display: block;
+    float: left;
     content: "";
     .size(60px; 60px);
+    margin-right: 20px;
     @media (min-width: @tablet-width) {
+      float: none;
       .size(80px; 80px);
     }
     background: url("../img/icon-tub.svg") no-repeat center, @basic-green;
   }
   &--eat::before {
     display: block;
+    float: left;
     content: "";
     .size(60px; 60px);
+    margin-right: 20px;
     @media (min-width: @tablet-width) {
+      float: none;
       .size(80px; 80px);
     }
     background: url("../img/icon-eat.svg") no-repeat center, @basic-green;
   }
   &--alarm::before {
     display: block;
+    float: left;
     content: "";
     .size(60px; 60px);
+    margin-right: 20px;
     @media (min-width: @tablet-width) {
+      float: none;
       .size(80px; 80px);
     }
     background: url("../img/icon-alarm.svg") no-repeat center, @basic-green;
