@@ -96,5 +96,49 @@
     background: url("../img/icon-alarm.svg") no-repeat center, @basic-green;
   }
   @media (min-width: @tablet-width) {
+    &--leaf::after {
+      content: "1";
+      .font(280px; 280px);
+      .oswald();
+      color: @basic-grey;
+      position: absolute;
+      display: block;
+      z-index: -1;
+      margin-left: 119px;
+      margin-top: -223px;
+    }
+    &--tub::after {
+      content: "2";
+      .font(280px; 280px);
+      .oswald();
+      color: @basic-grey;
+      position: absolute;
+      display: block;
+      z-index: -1;
+      margin-left: 112px;
+      margin-top: -223px;
+    }
+    &--eat::after {
+      content: "3";
+      .font(280px; 280px);
+      .oswald();
+      color: @basic-grey;
+      position: absolute;
+      display: block;
+      z-index: -1;
+      margin-left: 114px;
+      margin-top: -223px;
+    }
+    &--alarm::after {
+      content: "4";
+      .font(280px; 280px);
+      .oswald();
+      color: @basic-grey;
+      position: absolute;
+      display: block;
+      z-index: -1;
+      margin-left: 114px;
+      margin-top: -223px;
+    }
   }
 }
