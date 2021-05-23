@@ -8,47 +8,52 @@
   padding-bottom: 11px;
   width: 280px;
   .theme(@basic-green; white);
+  @media (min-width: @tablet-width) {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
   &--link {
     @media (min-width: @tablet-width) {
-      .size(244px; 54px);
+      .size(244px; 26px);
+      .font(20px; 20px);
     }
   }
   &--submit {
     .font(16px; 20px);
     @media (min-width: @tablet-width) {
-      .size(282px; 52px);
+      .size(282px; 41px);
       .font(20px; 20px);
     }
     @media (min-width: @desktop-width) {
-      .size(568px; 52px);
+      .size(568px; 41px);
     }
   }
   &--order {
     .font(16px; 20px);
     @media (min-width: @tablet-width) {
-      .size(248px; 39px);
+      .size(248px; 28px);
     }
     @media (min-width: @desktop-width) {
-      .size(168px; 40px);
+      .size(168px; 29px);
     }
   }
   &--show-more {
     .font(16px; 20px);
     @media (min-width: @tablet-width) {
-      .size(248px; 39px);
+      .size(248px; 28px);
     }
     @media (min-width: @desktop-width) {
-      .size(168px; 40px);
+      .size(168px; 29px);
     }
     .theme(@basic-grey);
   }
   &--order-extra {
     .font(16px; 20px);
     @media (min-width: @tablet-width) {
-      .size(632px; 38px);
+      .size(632px; 27px);
     }
     @media (min-width: @desktop-width) {
-      .size(244px; 40px);
+      .size(244px; 29px);
     }
   }
 }

@@ -1,4 +1,5 @@
 .program-options__list {
+  margin-top: 22px;
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -13,9 +14,11 @@
   margin-bottom: 20px;
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
+    padding-bottom: 60px;
   }
   @media (min-width: @desktop-width) {
-    .size(570px; 374px);
+    .size(570px; 358px);
+    padding-bottom: 0;
   }
 }
 
@@ -49,10 +52,13 @@
   }
   @media (min-width: @tablet-width) {
     margin-left: 53px;
+    margin-top: 64px;
+    margin-bottom: 12px;
     .font(36px; 36px);
   }
   @media (min-width: @desktop-width) {
-    margin-left: 212px;
+    margin-top: 61px;
+    margin-left: 214px;
     &--slim::before {
       content: "";
       position: absolute;
@@ -82,11 +88,19 @@
   @media (max-width: @tablet-width - 1px) {
     border-bottom: 1px solid @basic-grey-3;
   }
-/*  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    &--slim {
+      width: 377px;
+    }
+    &--pro {
+      width: 342px;
+    }
     &--slim::after {
       content: "";
       position: absolute;
-      display: block;
+      display: inline-block;
+      margin-left: 233px;
+      margin-top: -129px;
       background: url("../img/cat-slim.svg") no-repeat;
       background-size: contain;
       .size(200px; 211px);
@@ -94,16 +108,24 @@
     &--pro::after {
       content: "";
       position: absolute;
-      display: block;
+      display: inline-block;
+      margin-left: 300px;
+      margin-top: -118px;
       background: url("../img/cat-fit.svg") no-repeat;
       background-size: contain;
       .size(268px; 200px);
     }
-  } */
+  }
   @media (min-width: @tablet-width) {
     .black();
+    margin-top: 23px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 31px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 72px;
+    margin-bottom: 10px;
   }
 }
 
@@ -115,6 +137,7 @@
   margin-left: 20px;
   @media (min-width: @tablet-width) {
     .font(20px; 21px);
+    margin-left: 52px;
   }
   &::after {
     content: "";
@@ -123,6 +146,14 @@
     margin-left: 15px;
     background: url("../img/arrow.svg") right;
     .size(24px; 12px);
+    @media (min-width: @tablet-width) {
+      margin-top: 7px;
+      margin-left: 25px;
+    }
+    @media (min-width: @desktop-width) {
+      margin-top: 4px;
+      margin-left: 27px;
+    }
   }
   &:hover {
     &::after {
