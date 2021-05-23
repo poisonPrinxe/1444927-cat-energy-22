@@ -21,35 +21,35 @@
       </nav>
     </header>
     <main>
-      <h1 class="headline container">Подбор программы</h1>
       <form class="form" action=https://echo.htmlacademy.ru/>
+        <h1 class="headline form__headline container">Подбор программы</h1>
         <p class="form__description container">заполните анкету, и мы подберём<br>программу питания для вашего кота</p>
         <div class="form__basics-radio-wrapper container">
           <div class="form__div form__div--basics">
-            <div>
+            <div class="form__text-wrapper">
               <label class="form__text-label" for="name">имя:*</label>
               <input class="form__text-input" type="text" name="name" id="name" placeholder="Барсик">
             </div>
-            <div>
+            <div class="form__text-wrapper">
               <label class="form__text-label" for="weight">вес (кг):*</label>
               <input class="form__text-input" type="number" name="weight" id="weight" placeholder="7">
             </div>
-            <div>
+            <div class="form__text-wrapper">
               <label class="form__text-label" for="age">возраст (лет):</label>
               <input class="form__text-input" type="number" name="age" id="age" placeholder="7">
             </div>
           </div>
           <div class="form__div form__div--radio">
-            <div>
-              <input class="form__radio-input" type="radio" name="which-help" id="weight-loss" value="weight-loss" checked>
+            <div class="form__radio-wrapper">
+              <input class="form__radio-input visually-hidden" type="radio" name="which-help" id="weight-loss" value="weight-loss" checked>
               <label class="form__radio-label" for="weight-loss">похудение</label>
             </div>
-            <div>
-              <input class="form__radio-input" type="radio" name="which-help" id="weight-gain" value="weight-gain">
+            <div class="form__radio-wrapper">
+              <input class="form__radio-input visually-hidden" type="radio" name="which-help" id="weight-gain" value="weight-gain">
               <label class="form__radio-label" for="weight-gain">набор массы</label>
             </div>
-            <div>
-              <input class="form__radio-input" type="radio" name="which-help" id="dont-know" value="dont-know">
+            <div class="form__radio-wrapper">
+              <input class="form__radio-input visually-hidden" type="radio" name="which-help" id="dont-know" value="dont-know">
               <label class="form__radio-label" for="dont-know">не знаю (нужен ваш совет)</label>
             </div>
           </div>
@@ -57,11 +57,11 @@
         <div class="form__div form__div--contacts">
           <div class="form__name-wrapper"><h2 class="container"><span class="form__name">Контактные данные (владельца кота)</span></h2></div>
           <div class="form__contacts-wrapper container">
-            <div>
+            <div class="form__text-wrapper">
               <label class="form__text-label" for="email">e-mail:*</label>
               <input class="form__text-input form__text-input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
             </div>
-            <div>
+            <div class="form__text-wrapper">
               <label class="form__text-label" for="tel">телефон:*</label>
               <input class="form__text-input form__text-input--telephone" type="tel" name="tel" id="tel" placeholder="+7 (960) 900-60-90">
             </div>
@@ -74,20 +74,20 @@
         <div class="form__div form__div--extras">
           <div class="form__name-wrapper"><h2 class="container"><span class="form__name">Дополнительно</span></h2></div>
           <div class="form__extras-wrapper container">
-            <div>
-              <input class="form__checkbox-input" type="checkbox" name="extra" id="fake-sugar" value="fake-sugar" checked>
+            <div class="form__checkbox-wrapper">
+              <input class="form__checkbox-input visually-hidden" type="checkbox" name="extra" id="fake-sugar" value="fake-sugar" checked>
               <label class="form__checkbox-label" for="fake-sugar">сахарозаменитель</label>
             </div>
-            <div>
-              <input class="form__checkbox-input" type="checkbox" name="extra" id="water" value="water">
+            <div class="form__checkbox-wrapper">
+              <input class="form__checkbox-input visually-hidden" type="checkbox" name="extra" id="water" value="water">
               <label class="form__checkbox-label" for="water">питьевая вода</label>
             </div>
-            <div>
-              <input class="form__checkbox-input" type="checkbox" name="extra" id="milk" value="milk">
+            <div class="form__checkbox-wrapper">
+              <input class="form__checkbox-input visually-hidden" type="checkbox" name="extra" id="milk" value="milk">
               <label class="form__checkbox-label" for="milk">молоко</label>
             </div>
-            <div>
-              <input class="form__checkbox-input" type="checkbox" name="extra" id="vitamins" value="vitamins">
+            <div class="form__checkbox-wrapper">
+              <input class="form__checkbox-input visually-hidden" type="checkbox" name="extra" id="vitamins" value="vitamins">
               <label class="form__checkbox-label" for="vitamins">витамины</label>
             </div>
           </div>
@@ -111,14 +111,14 @@
       <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871608207!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1621573633103!5m2!1sru!2sru" allowfullscreen="" loading="lazy">
       </iframe>
       <div class="footer__bottom-wrapper container">
-        <a><img src="img/footer-textlogo.svg"></a>
+        <a class="footer__textlogo"><img src="img/footer-textlogo.svg"></a>
         <ul class="list footer__social">
           <li><a class="footer__social-element footer__social-element--vk" href="#"></a></li>
           <li><a class="footer__social-element footer__social-element--insta" href="#"></a></li>
           <li><a class="footer__social-element footer__social-element--fb" href="#"></a></li>
         </ul>
         <div class="footer__html-academy">
-          <a class="footer__html-link" href="#">HTML Academy<img class="footer__html-logo" src="img/logo-html.svg"></a>
+          <a class="footer__html-link" href="#"><span>HTML Academy</span><img class="footer__html-logo" src="img/logo-html.svg"></a>
         </div>
       </div>
     </footer>
