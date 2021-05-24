@@ -1,17 +1,24 @@
 .program-options__list {
+  margin-top: 22px;
   @media (min-width: @desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
 .program-options__item {
+  margin-top: 20px;
+  padding-top: 14px;
+  padding-bottom: 18px;
   .theme(@basic-grey);
-  margin: 20px;
+  margin-bottom: 20px;
   @media (min-width: @tablet-width) {
-    margin: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 60px;
   }
   @media (min-width: @desktop-width) {
-    margin: 80px;
+    .size(570px; 358px);
+    padding-bottom: 0;
   }
 }
 
@@ -20,8 +27,105 @@
   .oswald();
   .black();
   .font(24px; 24px);
+  margin-left: 91px;
+  @media (max-width: @tablet-width - 1px) {
+    &--slim::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/cat-slim.svg") no-repeat center;
+      background-size: contain;
+      .size(50px; 53px);
+      margin-top: -16px;
+      margin-left: -69px;
+    }
+    &--pro::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/cat-fit.svg") no-repeat center;
+      background-size: contain;
+      .size(67px; 50px);
+      margin-top: -14px;
+      margin-left: -78px;
+    }
+  }
   @media (min-width: @tablet-width) {
+    margin-left: 53px;
+    margin-top: 64px;
+    margin-bottom: 12px;
     .font(36px; 36px);
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 61px;
+    margin-left: 214px;
+    &--slim::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/cat-slim.svg") no-repeat center;
+      background-size: contain;
+      .size(100px; 106px);
+      margin-top: -36px;
+      margin-left: -162px;
+    }
+    &--pro::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/cat-fit.svg") no-repeat center;
+      background-size: contain;
+      .size(134px; 100px);
+      margin-top: -30px;
+      margin-left: -181px;
+    }
+  }
+}
+
+.program-options__description {
+  margin: 36px 20px 19px;
+  padding-bottom: 20px;
+  @media (max-width: @tablet-width - 1px) {
+    border-bottom: 1px solid @basic-grey-3;
+  }
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    &--slim {
+      width: 377px;
+    }
+    &--pro {
+      width: 342px;
+    }
+    &--slim::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      margin-left: 233px;
+      margin-top: -129px;
+      background: url("../img/cat-slim.svg") no-repeat;
+      background-size: contain;
+      .size(200px; 211px);
+    }
+    &--pro::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      margin-left: 300px;
+      margin-top: -118px;
+      background: url("../img/cat-fit.svg") no-repeat;
+      background-size: contain;
+      .size(268px; 200px);
+    }
+  }
+  @media (min-width: @tablet-width) {
+    .black();
+    margin-top: 23px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 33px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 72px;
+    margin-bottom: 10px;
   }
 }
 
@@ -30,7 +134,30 @@
   .oswald();
   .black();
   .font(16px; 18px);
+  margin-left: 20px;
   @media (min-width: @tablet-width) {
     .font(20px; 21px);
+    margin-left: 52px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 15px;
+    background: url("../img/arrow.svg") right;
+    .size(24px; 12px);
+    @media (min-width: @tablet-width) {
+      margin-top: 7px;
+      margin-left: 25px;
+    }
+    @media (min-width: @desktop-width) {
+      margin-top: 4px;
+      margin-left: 27px;
+    }
+  }
+  &:hover {
+    &::after {
+      .size(32px; 12px);
+    }
   }
 }

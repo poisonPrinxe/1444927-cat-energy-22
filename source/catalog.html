@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
-    <header class="header container">
-      <a class="logo header__logo"><img class="logo__image"></a>
-      <nav class="nav header__nav">
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__logo-wrapper">
+          <a class="nav__logo"><img class="nav__logo-image"></a>
+          <button type="button" class="nav__close"></button>
+        </div>
         <ul class="list nav__list">
           <li class="nav__item"><a class="nav__link" href="index.html">главная</a></li>
           <li class="nav__item nav__item--current"><a class="nav__link">каталог продукции</a></li>
@@ -155,21 +158,21 @@
     <footer class="footer">
       <div class="footer__contacts">
         <div class="container footer__contacts-container">
-          <p class="footer__announcement">приглашаем к сотрудничеству дилеров!</p>
+          <p class="footer__announcement">приглашаем<br>к сотрудничеству<br>дилеров!</p>
           <div class="footer__address">
-            <p class="footer__address-paragraph">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="footer__address-paragraph">ул. Большая<br>Конюшенная, д. 19/8</p>
             <p class="footer__address-paragraph">Санкт-Петербург</p>
           </div>
         </div>
       </div>
-      <div class="footer__map">
-      </div>
-      <div class="container">
+      <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871608207!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1621573633103!5m2!1sru!2sru" allowfullscreen="" loading="lazy">
+      </iframe>
+      <div class="footer__bottom-wrapper container">
         <a><img src="img/footer-textlogo.svg"></a>
         <ul class="list footer__social">
-          <li class="footer__social-element footer__social-element--vk"><a href="#"></a></li>
-          <li class="footer__social-element footer__social-element--insta"><a href="#"></a></li>
-          <li class="footer__social-element footer__social-element--fb"><a href="#"></a></li>
+          <li><a class="footer__social-element footer__social-element--vk" href="#"></a></li>
+          <li><a class="footer__social-element footer__social-element--insta" href="#"></a></li>
+          <li><a class="footer__social-element footer__social-element--fb" href="#"></a></li>
         </ul>
         <div class="footer__html-academy">
           <a class="footer__html-link" href="#">HTML Academy<img class="footer__html-logo" src="img/logo-html.svg"></a>
