@@ -98,7 +98,6 @@
 .extra-products__amount {
   margin: 0;
   @media (min-width: @tablet-width) {
-    padding-top: 11px;
     text-align: right;
   }
   @media (min-width: @desktop-width) {
@@ -111,7 +110,6 @@
 .extra-products__price {
   margin: 0;
   @media (max-width: @desktop-width - 1px) {
-    padding-top: 11px;
     text-align: right;
   }
   @media (min-width: @desktop-width) {
@@ -131,16 +129,18 @@
 }
 
 .extra-products__gift {
-  background-color: @basic-green;
+  background: url("../img/gift-background-mobile.png") no-repeat center;
   padding-top: 9px;
   .size(280px; 280px);
   margin-bottom: 35px;
   @media (min-width: @tablet-width) {
+    background: url("../img/gift-background-tablet.png") no-repeat center;
     .size(100%; 128px);
     padding-top: 72px;
     margin-bottom: 76px;
   }
   @media (min-width: @desktop-width) {
+    background: url("../img/gift-background-desktop.png") no-repeat center;
     margin-top: 55px;
     padding-top: 47px;
     width: 245px;
@@ -161,18 +161,22 @@
     .size(78px; 80px);
     background: url("../img/icon-gift.svg");
     background-size: cover;
-    @media (min-width: @tablet-width) and (max-width: @desktop-width -1px) {
+    @media (min-width: @tablet-width) {
       margin: 0;
       margin-right: 265px;
+      display: inline-block;
       float: left;
       transform: translateY(-15px);
     }
     @media (min-width: @desktop-width) {
-      margin-top: 10px;
+      margin: 10px auto 50px;
+      display: block;
+      float: none;
+      transform: none;
     }
   }
   @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
-    width: 700px;
+    width: 550px;
     text-align: left;
     margin-left: 80px;
   }
