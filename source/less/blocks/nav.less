@@ -13,26 +13,33 @@
 
 .nav__logo-wrapper {
   @media (max-width: @tablet-width - 1px) {
-    padding-top: 15px;
-    padding-bottom: 9px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     display: flex;
     justify-content: space-between;
   }
 }
 
+.nav__logo {
+  @media (max-width: @tablet-width - 1px) {
+    &::after {
+      content: "";
+      display: inline-block;
+      background: url("../img/footer-textlogo.svg") no-repeat;
+      .size(101px, 18px);
+      background-size: contain;
+      transform: translateX(52px) translateY(-7px);
+    }
+  }
+}
+
 .nav__logo-image {
-  background: url("../img/logo-mobile.svg") left center no-repeat, url("../img/footer-textlogo.svg") right center no-repeat;
-  .size(190px; 38px);
-  background-size: contain, 101px auto;
+  .size(34px; 38px);
   @media (min-width: @tablet-width) {
-    background: url("../img/logo-tablet.svg") center no-repeat;
     .size(174px; 52px);
-    background-size: contain;
   }
   @media (min-width: @desktop-width) {
-    background: url("../img/logo-desktop.svg") center no-repeat;
     .size(202px; 59px);
-    background-size: contain;
   }
 }
 
