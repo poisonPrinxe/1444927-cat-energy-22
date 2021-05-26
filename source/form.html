@@ -10,7 +10,13 @@
     <header class="header">
       <nav class="nav container">
         <div class="nav__logo-wrapper">
-          <a class="nav__logo"><img class="nav__logo-image"></a>
+          <a class="nav__logo">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="nav__logo-image" src="img/logo-mobile.svg">
+            </picture>
+          </a>
           <button type="button" class="nav__close"></button>
         </div>
         <ul class="list nav__list">
