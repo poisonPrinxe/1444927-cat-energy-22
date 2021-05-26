@@ -79,6 +79,13 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+  @media (max-width: @tablet-width - 1px) {
+    &--closed {
+      .visually-hidden;
+    }
+  }
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -87,8 +94,6 @@
   @media (min-width: @desktop-width) {
     width: 478px;
   }
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .nav__item {

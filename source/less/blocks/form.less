@@ -110,6 +110,9 @@
   .font(16px; 18px);
   padding: 13px;
   border: 1px solid @basic-grey-2;
+  &--number {
+    -moz-appearance: textfield;
+  }
   &--textarea {
     .size(252px; 122px);
     margin-top: 19px;
@@ -126,6 +129,7 @@
   }
   &::placeholder {
     color: @special-dark-grey;
+    opacity: 1;
   }
   &--email {
     border-color: @special-grey;
