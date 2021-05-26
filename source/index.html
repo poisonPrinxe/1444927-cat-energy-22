@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
@@ -33,9 +33,11 @@
             <h1 class="headline food-basics__headline">Функциональное <br> питание для котов</h1>
             <p class="food-basics__catchphrase">занялся собой? займись котом!</p>
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/index-can-desktop-1.png">
-              <source media="(min-width: 768px)" srcset="img/index-can-tablet-1.png">
-              <img class="food-basics__image" src="img/index-can-mobile-1.png">
+              <source media="(min-width: 1440px)" srcset="img/index-can-desktop-1.png 1x,
+                                                          img/index-can-desktop-1-x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet-1.png 1x,
+                                                         img/index-can-tablet-1-x2.png 2x">
+              <img class="food-basics__image" src="img/index-can-mobile-1.png" srcset="img/index-can-mobile-1-x2.png 2x">
             </picture>
             <a class="button button--link food-basics__button" href="form.html">подобрать программу</a>
           </div>
