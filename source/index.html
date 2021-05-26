@@ -86,11 +86,13 @@
             </div>
             <div class="live-example__slider-wrapper">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/before-image-desktop.png">
-                <img class="live-example__image live-example__image--before" src="img/before-image-mobile.png">
+                <source media="(min-width: 768px)" srcset="img/before-image-desktop.png 1x,
+                                                           img/before-image-desktop-x2.png 2x">
+                <img class="live-example__image live-example__image--before" src="img/before-image-mobile.png" srcset="img/before-image-mobile-x2.png 2x">
               </picture>
               <picture>
-                <source media="(min-width: 768px)" srcset="img/after-image-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/after-image-desktop.png 1x,
+                                                           img/after-image-desktop-x2.png 2x" srcset="img/after-image-mobile-x2.png 2x">
                 <img class="live-example__image live-example__image--after visually-hidden" src="img/after-image-mobile.png">
               </picture>
               <div class="live-example__slider">
