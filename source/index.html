@@ -10,7 +10,13 @@
     <header class="header">
       <nav class="nav container">
         <div class="nav__logo-wrapper">
-          <a class="nav__logo"><img class="nav__logo-image"></a>
+          <a class="nav__logo">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="nav__logo-image" src="img/logo-mobile.svg">
+            </picture>
+          </a>
           <button type="button" class="nav__close"></button>
         </div>
         <ul class="list nav__list">
@@ -26,7 +32,11 @@
           <div class="food-basics__wrapper">
             <h1 class="headline food-basics__headline">Функциональное <br> питание для котов</h1>
             <p class="food-basics__catchphrase">занялся собой? займись котом!</p>
-            <img class="food-basics__image">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/index-can-desktop-1.png">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet-1.png">
+              <img class="food-basics__image" src="img/index-can-mobile-1.png">
+            </picture>
             <a class="button button--link food-basics__button" href="form.html">подобрать программу</a>
           </div>
         </div>
@@ -73,8 +83,14 @@
               <p class="live-example__cost"><span>затраты на питание:</span><span>15 000 руб.</span></p>
             </div>
             <div class="live-example__slider-wrapper">
-              <img class="live-example__image live-example__image--before">
-              <img class="live-example__image live-example__image--after visually-hidden">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/before-image-desktop.png">
+                <img class="live-example__image live-example__image--before" src="img/before-image-mobile.png">
+              </picture>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/after-image-desktop.png">
+                <img class="live-example__image live-example__image--after visually-hidden" src="img/after-image-mobile.png">
+              </picture>
               <div class="live-example__slider">
                 <button type="button" class="live-example__before-after live-example__before-after--before">было</button>
                 <div class="live-example__slider-outside">
