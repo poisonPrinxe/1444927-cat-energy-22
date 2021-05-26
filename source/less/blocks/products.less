@@ -1,6 +1,6 @@
 .products__headline {
   margin-top: 27px;
-  margin-bottom: 61px;
+  margin-bottom: 60px;
   @media (min-width: @tablet-width) {
     margin-top: 60px;
   }
@@ -24,7 +24,7 @@
 }
 
 .products__option {
-  margin-top: 44px;
+  margin-top: 43px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   &--show-more {
@@ -49,62 +49,23 @@
 }
 
 .products__image {
-  .size(140px; 103px);
+  .size(140px; 112px);
   @media (min-width: @tablet-width) {
-    .size(248px; 257px);
+    .size(168px; 200px);
+    margin-left: 42px;
+    margin-top: 30px;
+    margin-bottom: 28px;
   }
-  &--chicken-small {
-    background: url("../img/chicken-small.png") center no-repeat;
-    background-size: 80px auto;
-    @media (min-width: @tablet-width) {
-      background-size: 161px auto;
-    }
-  }
-  &--chicken-big {
-    background: url("../img/chicken-big.png") center no-repeat;
-    background-size: 84px auto;
-    @media (min-width: @tablet-width) {
-      background-size: 168px auto;
-    }
-  }
-  &--fish-small {
-    background: url("../img/fish-small.png") center no-repeat;
-    background-size: 80px auto;
-    @media (min-width: @tablet-width) {
-      background-size: 161px auto;
-    }
-  }
-  &--fish-big {
-    background: url("../img/fish-big.png") center no-repeat;
-    background-size: 84px auto;
-    @media (min-width: @tablet-width) {
-      background-size: 168px auto;
-    }
-  }
-  &--buckwheat-small {
-    background: url("../img/buckwheat-small.png") center no-repeat;
-    background-size: 80px auto;
-    @media (min-width: @tablet-width) {
-      background-size: 161px auto;
-    }
-  }
-  &--buckwheat-big {
-    background: url("../img/buckwheat-big.png") center no-repeat;
-    background-size: 84px auto;
-    @media (min-width: @tablet-width) {
-      background-size: 168px auto;
-    }
-  }
-  &--rice-small {
-    background: url("../img/rice-small.png") center no-repeat;
-    background-size: 80px auto;
-    @media (min-width: @tablet-width) {
-      background-size: 161px auto;
-    }
+  @media (min-width: @desktop-width) {
+    margin-left: 3px;
+    margin-top: 22px;
+    margin-bottom: 36px; 
   }
 }
 
 .products__name-link {
+  height: 30px;
+  margin-top: 2px;
   &--show-more::before {
     content: "";
     margin: 0 auto 24px;
@@ -150,6 +111,7 @@
   .font(12px; 16px);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 7px;
   @media (min-width: @tablet-width) {
     .font(16px; 16px);
     row-gap: 22px;
@@ -174,7 +136,7 @@
 }
 
 .products__button {
-  margin-top: 16px;
+  margin-top: 8px;
   grid-column-start: 1;
   grid-column-end: -1;
   @media (min-width: @tablet-width) {

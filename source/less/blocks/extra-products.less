@@ -1,7 +1,7 @@
 .extra-products {
   padding-top: 49px;
   @media (min-width: @tablet-width) {
-    padding-top: 76px;
+    padding-top: 72px;
   }
   @media (min-width: @desktop-width) {
     padding-top: 81px;
@@ -34,7 +34,7 @@
   margin-bottom: 39px;
   @media (min-width: @tablet-width) {
     margin-top: 55px;
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 }
 
@@ -110,8 +110,10 @@
 .extra-products__price {
   margin: 0;
   @media (max-width: @desktop-width - 1px) {
-    margin-top: 10px;
     text-align: right;
+  }
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
   }
 }
 
@@ -120,6 +122,8 @@
   @media (max-width: @desktop-width - 1px) {
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+  @media (min-width: @tablet-width) {
   }
   @media (min-width: @desktop-width) {
     margin: 0;
