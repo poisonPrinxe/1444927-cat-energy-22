@@ -59,6 +59,22 @@
   }
 }
 
+.nav__open {
+  display: none;
+  @media (max-width: @tablet-width - 1px) {
+    display: block;
+    .theme(transparent);
+    .no-border();
+    &::after {
+      content: "";
+      display: block;
+      .size(24px; 16px);
+      background: url("../img/hamburger.svg");
+      background-size: contain;
+    }
+  }
+}
+
 .nav__list {
   text-align: center;
   display: flex;
